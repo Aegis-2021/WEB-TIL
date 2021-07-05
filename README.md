@@ -21,7 +21,7 @@
 3. 새로운 브랜치 생성하기
 
    ```bash
-   git checkout -m til/{Github 닉네임}  # git checkout -m til/himitery
+   git checkout -b til/{Github 닉네임}  # git checkout -b til/himitery
    ```
 
 ### ⚙️ TIL 작성하기
