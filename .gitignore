@@ -5,3 +5,6 @@ package-lock.json
 # yarn
 .yarn/**
 yarn*.lock
+
+# configure
+.conf

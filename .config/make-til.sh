@@ -1,6 +1,9 @@
 #!/bin/sh
 
-NAME=$1
+CONFIG_PATH="./.config"
+CONFIG_FILE="${CONFIG_PATH}/.conf"
+NAME=$(awk '/^NAME/{print $3}' ${CONFIG_FILE})
+
 TODAY=`date +"%y-%m-%d"`
 DIR_PATH="./TIL/${NAME}"
 NEW_FILE="${NAME}(${TODAY}).md"

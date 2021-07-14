@@ -8,7 +8,9 @@
   "private": true,
   "scripts": {
     "prepare": "husky install",
-    "make": ".config/make-til.sh $1"
+    "set": "./.config/config.sh $1 $2",
+    "make": "./.config/make-til.sh",
+    "commit": "./.config/commit.sh"
   },
   "dependencies": {},
   "devDependencies": {
