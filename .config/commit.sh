@@ -4,6 +4,7 @@ CONFIG_PATH="./.config"
 CONFIG_FILE="${CONFIG_PATH}/.conf"
 NAME=$(awk '/^NAME/{print $3}' ${CONFIG_FILE})
 GITHUB_ID=$(awk '/^GITHUB_ID/{print $3}' ${CONFIG_FILE})
+PUSH_DESTINATION="til/${GITHUB_ID}"
 
 DIR_PATH="./TIL/${NAME}"
 
@@ -24,3 +25,4 @@ fi
 
 git add ${COMMIT_FILE}
 git commit -m "${COMMIT_MESSAGE}"
+git push origin ${PUSH_DESTINATION}
